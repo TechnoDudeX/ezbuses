@@ -538,16 +538,16 @@
     .areas-map {
       border-radius: 16px;
       overflow: hidden;
+      background: var(--off-white);
       border: 1px solid var(--grey-light);
-      aspect-ratio: 4/3;
       position: sticky;
       top: 96px;
+      padding: 24px;
     }
 
-    .areas-map iframe {
+    .areas-map svg {
       width: 100%;
-      height: 100%;
-      border: 0;
+      height: auto;
       display: block;
     }
 
@@ -1090,13 +1090,91 @@
       <div class="areas-layout">
 
         <div class="areas-map reveal reveal-delay-2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d369610.0!2d-79.38!3d43.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1700000000000"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="EZ Buses service area map — Greater Toronto Area"
-            allowfullscreen>
-          </iframe>
+          <svg viewBox="0 0 800 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the Greater Toronto Area showing EZ Buses service regions">
+            <title>Greater Toronto Area — EZ Buses Service Map</title>
+            <defs>
+              <style>
+                .map-region { stroke: #fff; stroke-width: 2; cursor: pointer; transition: fill 0.25s, filter 0.25s; }
+                .map-region:hover { filter: brightness(0.92); }
+                .map-label-region { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; fill: #1C1C1C; pointer-events: none; }
+                .map-label-city { font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 11px; fill: #3A3A3A; pointer-events: none; }
+                .map-label-water { font-family: 'Urbanist', sans-serif; font-weight: 600; font-size: 15px; fill: #5B9BD5; font-style: italic; pointer-events: none; }
+                .map-dot { fill: #1C1C1C; pointer-events: none; }
+                .map-water { fill: #D6EAF8; stroke: none; }
+              </style>
+            </defs>
+
+            <!-- Lake Ontario -->
+            <path class="map-water" d="M340,580 Q400,540 500,550 Q600,545 700,560 Q780,570 800,590 L800,680 L0,680 L0,640 Q60,620 140,610 Q240,595 340,580Z"/>
+            <text class="map-label-water" x="560" y="620">Lake Ontario</text>
+
+            <!-- Lake Simcoe -->
+            <path class="map-water" d="M380,10 Q400,0 430,5 Q460,0 480,10 Q490,30 485,60 Q480,90 460,100 Q440,108 420,100 Q395,90 385,65 Q378,40 380,10Z"/>
+            <text class="map-label-water" x="410" y="55" text-anchor="middle" font-size="11">Lake Simcoe</text>
+
+            <!-- Lake Scugog -->
+            <path class="map-water" d="M600,80 Q610,70 625,75 Q635,80 635,95 Q632,115 620,120 Q608,118 602,105 Q598,92 600,80Z"/>
+            <text class="map-label-water" x="618" y="72" text-anchor="middle" font-size="10">Lake Scugog</text>
+
+            <!-- HALTON region -->
+            <path class="map-region" d="M30,370 L130,310 L175,340 L175,430 L165,500 L140,560 L100,580 L50,570 L20,520 L10,450Z" fill="#FDEBD0"/>
+            <text class="map-label-region" x="85" y="470" text-anchor="middle" font-size="16">HALTON</text>
+            <circle class="map-dot" cx="100" cy="510" r="3"/><text class="map-label-city" x="108" y="514">Burlington</text>
+            <circle class="map-dot" cx="120" cy="485" r="3"/><text class="map-label-city" x="83" y="489" text-anchor="end">Oakville</text>
+            <circle class="map-dot" cx="70" cy="440" r="3"/><text class="map-label-city" x="78" y="444">Milton</text>
+            <circle class="map-dot" cx="105" cy="390" r="3"/><text class="map-label-city" x="68" y="385" text-anchor="end">Halton Hills</text>
+
+            <!-- PEEL region -->
+            <path class="map-region" d="M130,310 L175,250 L220,200 L260,220 L290,280 L290,380 L250,440 L200,480 L175,430 L175,340Z" fill="#D5F5E3"/>
+            <text class="map-label-region" x="225" y="350" text-anchor="middle" font-size="16">PEEL</text>
+            <circle class="map-dot" cx="200" cy="310" r="3"/><text class="map-label-city" x="208" y="314">Brampton</text>
+            <circle class="map-dot" cx="230" cy="420" r="3"/><text class="map-label-city" x="195" y="424" text-anchor="end">Mississauga</text>
+            <circle class="map-dot" cx="195" cy="250" r="3"/><text class="map-label-city" x="157" y="254" text-anchor="end">Caledon</text>
+
+            <!-- YORK region -->
+            <path class="map-region" d="M260,220 L290,160 L310,110 L370,80 L460,100 L490,130 L490,220 L460,280 L400,310 L340,340 L290,280Z" fill="#FEF9E7"/>
+            <text class="map-label-region" x="385" y="210" text-anchor="middle">YORK</text>
+            <circle class="map-dot" cx="370" cy="145" r="3"/><text class="map-label-city" x="378" y="142">Newmarket</text>
+            <circle class="map-dot" cx="345" cy="165" r="3"/><text class="map-label-city" x="308" y="169" text-anchor="end">Aurora</text>
+            <circle class="map-dot" cx="320" cy="200" r="3"/><text class="map-label-city" x="290" y="204" text-anchor="end">King</text>
+            <circle class="map-dot" cx="420" cy="170" r="3"/><text class="map-label-city" x="395" y="182" text-anchor="end">Stouffville</text>
+            <circle class="map-dot" cx="380" cy="240" r="3"/><text class="map-label-city" x="355" y="255" text-anchor="end">Richmond Hill</text>
+            <circle class="map-dot" cx="330" cy="260" r="3"/><text class="map-label-city" x="305" y="266" text-anchor="end">Vaughan</text>
+            <circle class="map-dot" cx="430" cy="260" r="3"/><text class="map-label-city" x="438" y="264">Markham</text>
+            <circle class="map-dot" cx="350" cy="105" r="3"/><text class="map-label-city" x="315" y="100" text-anchor="end">E. Gwillimbury</text>
+            <circle class="map-dot" cx="390" cy="95" r="3"/><text class="map-label-city" x="398" y="87">Georgina</text>
+
+            <!-- CITY OF TORONTO -->
+            <path class="map-region" d="M290,380 L290,280 L340,340 L400,310 L460,280 L490,310 L500,380 L490,440 L440,500 L360,540 L280,550 L250,510 L250,440Z" fill="#FFD100" fill-opacity="0.3" stroke="#FFD100" stroke-width="3"/>
+            <text class="map-label-region" x="385" y="400" text-anchor="middle" font-size="15">CITY OF</text>
+            <text class="map-label-region" x="385" y="422" text-anchor="middle">TORONTO</text>
+            <circle cx="390" cy="460" r="4" fill="#FFD100" stroke="#1C1C1C" stroke-width="2"/>
+            <circle class="map-dot" cx="320" cy="440" r="3"/><text class="map-label-city" x="290" y="444" text-anchor="end">Etobicoke</text>
+            <circle class="map-dot" cx="340" cy="480" r="3"/><text class="map-label-city" x="310" y="490" text-anchor="end">York</text>
+            <circle class="map-dot" cx="430" cy="360" r="3"/><text class="map-label-city" x="438" y="357">North York</text>
+            <circle class="map-dot" cx="470" cy="400" r="3"/><text class="map-label-city" x="478" y="397">Scarborough</text>
+            <circle class="map-dot" cx="400" cy="490" r="3"/><text class="map-label-city" x="408" y="493">East York</text>
+
+            <!-- DURHAM region -->
+            <path class="map-region" d="M490,130 L460,100 Q470,80 500,50 Q540,30 580,25 Q640,20 700,40 Q740,55 760,80 L760,200 L740,300 L700,400 L640,480 L560,530 L500,540 L490,440 L500,380 L490,310 L490,220Z" fill="#E8DAEF" fill-opacity="0.5"/>
+            <text class="map-label-region" x="620" y="210" text-anchor="middle">DURHAM</text>
+            <circle class="map-dot" cx="510" cy="360" r="3"/><text class="map-label-city" x="518" y="356">Pickering</text>
+            <circle class="map-dot" cx="540" cy="400" r="3"/><text class="map-label-city" x="548" y="404">Ajax</text>
+            <circle class="map-dot" cx="590" cy="370" r="3"/><text class="map-label-city" x="598" y="374">Whitby</text>
+            <circle class="map-dot" cx="630" cy="340" r="3"/><text class="map-label-city" x="638" y="337">Oshawa</text>
+            <circle class="map-dot" cx="710" cy="290" r="3"/><text class="map-label-city" x="698" y="286" text-anchor="end">Clarington</text>
+            <circle class="map-dot" cx="540" cy="180" r="3"/><text class="map-label-city" x="548" y="184">Uxbridge</text>
+            <circle class="map-dot" cx="620" cy="120" r="3"/><text class="map-label-city" x="628" y="117">Scugog</text>
+            <circle class="map-dot" cx="560" cy="60" r="3"/><text class="map-label-city" x="555" y="55" text-anchor="end">Brock</text>
+
+            <!-- Map title -->
+            <text x="780" y="30" text-anchor="end" font-family="Syne, sans-serif" font-weight="800" font-size="22" fill="#1C1C1C">GREATER TORONTO</text>
+            <text x="780" y="52" text-anchor="end" font-family="Syne, sans-serif" font-weight="800" font-size="22" fill="#1C1C1C">AREA</text>
+
+            <!-- Legend dot -->
+            <circle cx="660" cy="640" r="5" fill="#FFD100" stroke="#1C1C1C" stroke-width="2"/>
+            <text x="672" y="644" font-family="Urbanist, sans-serif" font-weight="600" font-size="12" fill="#1C1C1C">EZ Buses HQ — Toronto</text>
+          </svg>
         </div>
 
         <div class="areas-list reveal reveal-delay-3">
