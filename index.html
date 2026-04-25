@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EZ Buses — Charter Bus Rentals in Toronto &amp; the GTA</title>
-  <meta name="description" content="EZ Buses is a charter bus company providing school buses and coach rentals for private groups in Toronto and the Greater Toronto Area. Over 20 years of experience. Get a free quote today.">
-  <meta name="keywords" content="charter bus Toronto, school bus rental Toronto, coach bus GTA, field trip bus, corporate shuttle Toronto, wedding bus rental">
+  <title>EZ Buses — GTA charter buses</title>
+  <meta name="description" content="EZ Buses — charter school buses and coaches across the GTA, Ontario, and into the northeast US. Family-run for 20+ years. 15,000+ incident-free trips. Get a quote in 60 seconds.">
+  <meta name="keywords" content="charter bus Toronto, school bus rental Toronto, coach bus GTA, field trip bus, corporate shuttle Toronto, wedding bus rental, cross-border charter">
   <link rel="canonical" href="https://ezbuses.ca/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="EZ Buses — Charter Bus Rentals in Toronto & the GTA">
-  <meta property="og:description" content="School buses and coach rentals for private groups in Toronto and the Greater Toronto Area. Over 15,000 incident-free trips. Get a free quote.">
+  <meta property="og:title" content="EZ Buses — GTA charter buses">
+  <meta property="og:description" content="Charter school buses and coaches across the GTA, Ontario, and into the northeast US. Family-run for 20+ years. The dispatcher answers her own phone.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ezbuses.ca/">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,7 +42,6 @@
   }
   </script>
 
-  <!-- FAQ Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,34 +49,42 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much does it cost to rent a school bus for a day in Toronto?",
+        "name": "How far in advance do I need to book?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "School bus rental rates in Toronto vary depending on the distance, duration, and time of year. A typical full-day school bus charter within the GTA starts around $600–$900. Contact EZ Buses at 416-438-7371 for an exact quote tailored to your trip."
+          "text": "Two to four weeks is comfortable for a single school day-trip in the GTA. From May through October — peak field-trip and wedding season — give us six to eight weeks. Last-minute is sometimes possible; call dispatch before assuming it isn't."
         }
       },
       {
         "@type": "Question",
-        "name": "Are your coach buses air-conditioned?",
+        "name": "Are you cleared to do cross-border trips?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. All EZ Buses coach buses are fully equipped with air conditioning, reclining seats, overhead storage, and onboard restrooms for maximum passenger comfort on long-distance trips."
+          "text": "Yes. We carry the right insurance, US DOT registration, and IFTA paperwork to operate in New York, Michigan, Ohio, and Pennsylvania. Drivers carry their own enhanced docs. Coordinate the team's passports/letters with us 4+ weeks out."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you travel across the border to the US?",
+        "name": "What does a quote actually include?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. EZ Buses regularly operates cross-border charter trips from Ontario to US destinations. Our drivers carry all required documentation and our vehicles meet both Canadian and US regulatory standards."
+          "text": "Vehicle, driver, fuel, HST, driver gratuity, and standard insurance. For overnight trips, driver lodging is added as a line item. There are no booking fees, no fuel surcharges, and no peak-time multipliers."
         }
       },
       {
         "@type": "Question",
-        "name": "How far in advance should we book a charter?",
+        "name": "Do you have wheelchair-accessible vehicles?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We recommend booking at least 2–4 weeks in advance, especially during peak season (May through October). For large groups or multi-day trips, booking 6–8 weeks ahead ensures vehicle availability."
+          "text": "Yes — we operate accessible school buses and a lift-equipped coach. Note in the quote form how many wheelchair positions you need; we route the right vehicle to your job."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if our trip gets cancelled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Free reschedule up to 7 days before the trip. Inside 7 days we charge a 25% holding fee; same-day cancellations are billed at 50%. Weather cancellations called by school boards are always honoured at no charge."
         }
       }
     ]
@@ -88,1429 +93,1904 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --yellow: #FFD100;
-      --yellow-light: #FFF8DC;
-      --yellow-mid: #FFEBB0;
-      --charcoal: #1C1C1C;
-      --charcoal-soft: #3A3A3A;
-      --white: #FFFFFF;
-      --off-white: #FAFAFA;
-      --grey-light: #F0F0F0;
-      --grey-mid: #C4C4C4;
-      --grey-text: #6B6B6B;
-      --font-display: 'Syne', sans-serif;
-      --font-body: 'Urbanist', sans-serif;
+      --font-display: "Instrument Serif", "Times New Roman", serif;
+      --font-body: "Inter", system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+      --bg: oklch(0.98 0.008 80);
+      --bg-2: oklch(0.96 0.012 78);
+      --bg-3: oklch(0.94 0.014 76);
+      --ink: oklch(0.20 0.015 250);
+      --ink-2: oklch(0.36 0.012 250);
+      --ink-3: oklch(0.55 0.010 250);
+      --rule: oklch(0.88 0.010 80);
+      --rule-strong: oklch(0.78 0.012 80);
+      --accent: oklch(0.78 0.16 75);
+      --accent-deep: oklch(0.62 0.17 60);
+      --accent-soft: oklch(0.94 0.06 80);
+      --calm: oklch(0.50 0.08 240);
+      --calm-soft: oklch(0.94 0.025 240);
+      --good: oklch(0.62 0.13 145);
+
+      --gutter: clamp(20px, 4vw, 56px);
+      --max-w: 1280px;
+      --radius: 14px;
+      --radius-lg: 22px;
+
+      --shadow-1: 0 1px 2px rgba(20,20,30,0.04), 0 4px 12px rgba(20,20,30,0.04);
+      --shadow-2: 0 1px 2px rgba(20,20,30,0.05), 0 12px 36px rgba(20,20,30,0.07);
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-    }
-
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
     body {
       font-family: var(--font-body);
-      font-weight: 400;
-      color: var(--charcoal);
-      background: var(--white);
-      line-height: 1.7;
-      font-size: 17px;
+      font-size: 16px;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--bg);
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+      font-feature-settings: "ss01", "cv11";
     }
 
-    /* ---- UTILITY ---- */
-    .container {
-      max-width: 1120px;
+    img, svg { display: block; max-width: 100%; }
+    button { font: inherit; cursor: pointer; }
+    a { color: inherit; }
+
+    .wrap {
+      max-width: var(--max-w);
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 var(--gutter);
     }
 
-    section {
-      padding: 100px 0;
-    }
-
-    h1, h2, h3, h4 {
+    .h-display {
       font-family: var(--font-display);
-      font-weight: 800;
-      line-height: 1.1;
+      font-weight: 400;
       letter-spacing: -0.02em;
+      line-height: 0.95;
+      font-size: clamp(56px, 9vw, 132px);
+      color: var(--ink);
+      margin: 0;
     }
+    .h-display em { font-style: italic; color: var(--accent-deep); }
 
-    h2 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: clamp(1.25rem, 3vw, 1.5rem);
-      margin-bottom: 12px;
-    }
-
-    p { max-width: 640px; }
-
-    a { color: var(--charcoal); text-decoration: none; }
-
-    .section-label {
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--grey-text);
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    /* ---- NAV ---- */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--grey-light);
-      transition: box-shadow 0.3s;
-    }
-
-    nav.scrolled {
-      box-shadow: 0 2px 24px rgba(0,0,0,0.06);
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 72px;
-    }
-
-    .logo {
+    .h-section {
       font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 24px;
-      letter-spacing: -0.03em;
-      color: var(--charcoal);
-      display: flex;
-      align-items: center;
-      gap: 3px;
+      font-weight: 400;
+      font-size: clamp(40px, 5.5vw, 72px);
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
     }
+    .h-section em { font-style: italic; color: var(--accent-deep); }
 
-    .logo span {
-      color: var(--charcoal);
-    }
-
-    .logo .ez {
-      display: inline-block;
-      background: var(--yellow);
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-right: 4px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      list-style: none;
-    }
-
-    .nav-links a {
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
       font-weight: 500;
-      font-size: 15px;
-      color: var(--charcoal-soft);
-      transition: color 0.2s;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: var(--ink-3);
+      display: inline-block;
+    }
+    .eyebrow.no-rule::before { display: none; }
+
+    .lede {
+      font-size: clamp(17px, 1.4vw, 20px);
+      line-height: 1.55;
+      color: var(--ink-2);
+      max-width: 60ch;
     }
 
-    .nav-links a:hover {
-      color: var(--charcoal);
+    .mono {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: var(--ink-3);
     }
 
-    .nav-cta {
-      background: var(--charcoal);
-      color: var(--white) !important;
-      padding: 10px 24px;
-      border-radius: 8px;
-      font-weight: 600 !important;
-      transition: background 0.2s, transform 0.15s;
-    }
-
-    .nav-cta:hover {
-      background: var(--charcoal-soft);
-      transform: translateY(-1px);
-    }
-
-    .mobile-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    .mobile-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--charcoal);
-      margin: 6px 0;
-      transition: transform 0.3s, opacity 0.3s;
-    }
-
-    .mobile-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 6px);
-    }
-    .mobile-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .mobile-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -6px);
-    }
-
-    /* ---- HERO ---- */
-    .hero {
-      padding: 160px 0 120px;
+    .placeholder {
+      background:
+        repeating-linear-gradient(
+          135deg,
+          var(--bg-3) 0 8px,
+          var(--bg-2) 8px 16px
+        );
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
       position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 14px;
+      color: var(--ink-3);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       overflow: hidden;
     }
-
-    .hero::before {
-      content: '';
+    .placeholder::before {
+      content: "";
       position: absolute;
-      top: -120px;
-      right: -200px;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, var(--yellow) 0%, transparent 70%);
-      opacity: 0.15;
+      inset: 14px;
+      border: 1px dashed var(--rule-strong);
+      border-radius: 8px;
       pointer-events: none;
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.8rem, 7vw, 5.5rem);
-      margin-bottom: 32px;
-      max-width: 800px;
-    }
-
-    .hero h1 .highlight {
-      color: var(--charcoal);
-      position: relative;
-      display: inline;
-    }
-
-    .hero h1 .highlight::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-      width: 100%;
-      height: 12px;
-      background: var(--yellow);
-      z-index: -1;
-      opacity: 0.7;
-    }
-
-    .hero-sub {
-      font-size: clamp(1.05rem, 2.5vw, 1.2rem);
-      color: var(--charcoal-soft);
-      max-width: 520px;
-      margin-bottom: 40px;
-      font-weight: 300;
-      line-height: 1.8;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .btn-primary {
+    .btn {
       display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--yellow);
-      color: var(--charcoal);
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 16px;
-      padding: 16px 32px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.2s;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(255, 209, 0, 0.35);
-    }
-
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: transparent;
-      color: var(--charcoal);
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: 16px;
-      padding: 16px 24px;
-      border: 2px solid var(--grey-light);
-      border-radius: 10px;
-      cursor: pointer;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--charcoal);
-      transform: translateY(-1px);
-    }
-
-    .hero-phone {
-      font-size: 15px;
-      color: var(--grey-text);
-      font-weight: 500;
-    }
-
-    .hero-phone strong {
-      color: var(--charcoal);
-    }
-
-    /* ---- ANSWER BOX ---- */
-    .answer-box {
-      background: var(--yellow-light);
-      border-left: 5px solid var(--yellow);
-      padding: 28px 32px;
-      border-radius: 0 12px 12px 0;
-      margin-top: 60px;
-      max-width: 720px;
-    }
-
-    .answer-box p {
-      font-size: 1.1rem;
-      font-weight: 500;
-      line-height: 1.7;
-      color: var(--charcoal);
-      max-width: none;
-    }
-
-    /* ---- TRACK RECORD ---- */
-    .track-record {
-      background: var(--charcoal);
-      color: var(--white);
-      text-align: center;
-      padding: 80px 0;
-    }
-
-    .track-record .section-label {
-      color: var(--yellow);
-    }
-
-    .track-record h2 {
-      color: var(--white);
-      max-width: 700px;
-      margin: 0 auto 16px;
-    }
-
-    .track-record p {
-      color: var(--grey-mid);
-      margin: 0 auto;
-      font-size: 1.05rem;
-    }
-
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
-      margin-top: 56px;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-number {
-      font-family: var(--font-display);
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
-      font-weight: 800;
-      color: var(--yellow);
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-
-    .stat-label {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--grey-mid);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    /* ---- USE CASES ---- */
-    .use-cases {
-      background: var(--off-white);
-    }
-
-    .use-cases-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 32px;
-      margin-top: 48px;
-    }
-
-    .use-case-card {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 40px;
-      border: 1px solid var(--grey-light);
-      transition: transform 0.2s, box-shadow 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .use-case-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
-    }
-
-    .use-case-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: var(--yellow);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s;
-    }
-
-    .use-case-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .use-case-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--yellow-light);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .use-case-card p {
-      color: var(--charcoal-soft);
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    /* ---- AREAS SERVED ---- */
-    .areas-served {
-      background: var(--white);
-    }
-
-    .areas-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      margin-top: 48px;
-      align-items: start;
-    }
-
-    .areas-map {
-      border-radius: 16px;
-      overflow: hidden;
-      background: var(--off-white);
-      border: 1px solid var(--grey-light);
-      position: sticky;
-      top: 96px;
-      padding: 24px;
-    }
-
-    .areas-map svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .areas-list {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .area-region h3 {
-      font-size: 14px;
-      font-family: var(--font-body);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--grey-text);
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--grey-light);
-    }
-
-    .area-cities {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 24px;
-    }
-
-    .area-city {
-      display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 15.5px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--bg);
       font-weight: 500;
-      color: var(--charcoal);
-      padding: 6px 0;
-    }
-
-    .area-city::before {
-      content: '';
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--yellow);
-      flex-shrink: 0;
-    }
-
-    .areas-note {
-      margin-top: 24px;
-      padding: 20px 24px;
-      background: var(--yellow-light);
-      border-radius: 10px;
-      font-size: 14px;
-      color: var(--charcoal-soft);
-      line-height: 1.7;
-    }
-
-    .areas-note strong {
-      color: var(--charcoal);
-    }
-
-    @media (max-width: 900px) {
-      .areas-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-      .areas-map {
-        position: static;
-        aspect-ratio: 16/10;
-      }
-    }
-
-    /* ---- FAQ ---- */
-    .faq { background: var(--off-white); }
-
-    .faq-list {
-      max-width: 760px;
-      margin-top: 48px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid var(--grey-light);
-    }
-
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      text-align: left;
-      padding: 24px 48px 24px 0;
+      font-size: 15px;
+      letter-spacing: -0.005em;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      text-decoration: none;
+      white-space: nowrap;
       font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 17px;
-      color: var(--charcoal);
-      cursor: pointer;
-      position: relative;
-      line-height: 1.5;
-      transition: color 0.2s;
     }
+    .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); }
+    .btn:disabled { cursor: not-allowed; }
+    .btn .arrow {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--accent);
+      color: var(--ink);
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: transform 0.2s ease;
+      font-size: 13px;
+    }
+    .btn:hover .arrow { transform: translateX(2px); }
 
-    .faq-question:hover { color: var(--charcoal-soft); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--rule-strong);
+    }
+    .btn-ghost .arrow { background: var(--ink); color: var(--bg); }
 
-    .faq-question::after {
-      content: '+';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
+    .btn-accent {
+      background: var(--accent);
+      color: var(--ink);
+      border-color: var(--accent);
+    }
+    .btn-accent .arrow { background: var(--ink); color: var(--accent); }
+
+    .nav {
+      position: sticky; top: 0; z-index: 30;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      font-family: var(--font-display);
       font-size: 24px;
-      font-weight: 300;
-      color: var(--grey-text);
-      transition: transform 0.3s;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand-mark {
+      width: 34px; height: 34px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: grid; place-items: center;
+      font-family: var(--font-mono);
+      font-size: 13px; font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 28px;
+      font-size: 14px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--ink-2);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-phone {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--ink);
+      border-left: 1px solid var(--rule-strong);
+      padding-left: 28px;
+    }
+    .nav-phone a { text-decoration: none; color: inherit; }
+    .nav-phone strong { color: var(--ink); }
+
+    @media (max-width: 800px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .nav-phone { display: none; }
     }
 
-    .faq-item.active .faq-question::after {
-      content: '−';
-    }
-
-    .faq-answer {
-      max-height: 0;
+    .hero {
+      padding: clamp(48px, 8vw, 120px) 0 clamp(48px, 7vw, 100px);
+      position: relative;
       overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: clamp(32px, 5vw, 72px);
+      align-items: end;
+    }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
     }
 
-    .faq-item.active .faq-answer {
-      max-height: 300px;
+    .hero-meta {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 28px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-3);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      flex-wrap: wrap;
+    }
+    .hero-meta .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--good);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--good) 25%, transparent);
+    }
+    .hero-cta-row {
+      display: flex; gap: 14px; margin-top: 36px;
+      flex-wrap: wrap;
+    }
+    .hero-side {
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .hero-stat {
+      border-top: 1px solid var(--rule);
+      padding: 16px 0 0;
+    }
+    .hero-stat .num {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 4vw, 56px);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .hero-stat .num em { font-style: italic; color: var(--accent-deep); }
+    .hero-stat .label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-top: 6px;
     }
 
-    .faq-answer-inner {
-      padding: 0 0 24px;
-      color: var(--charcoal-soft);
-      font-size: 15px;
-      line-height: 1.8;
+    .hero-marquee {
+      margin-top: clamp(48px, 7vw, 96px);
+      padding: 18px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      display: flex; align-items: center; gap: 40px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink-3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .hero-marquee .scroll {
+      display: inline-flex; gap: 40px; align-items: center;
+      animation: marquee 40s linear infinite;
+    }
+    .hero-marquee .star { color: var(--accent-deep); font-size: 16px; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
 
-    /* ---- QUICK FACTS ---- */
-    .quick-facts {
-      background: var(--yellow);
+    .aud-section {
+      padding: clamp(48px, 7vw, 100px) 0;
+      border-top: 1px solid var(--rule);
     }
-
-    .quick-facts h2 {
+    .aud-head {
+      display: flex; justify-content: space-between; align-items: end;
+      gap: 32px; flex-wrap: wrap;
       margin-bottom: 40px;
     }
-
-    .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+    .aud-tabs {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      padding: 6px;
+      background: var(--bg-2);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
     }
-
-    .fact-item {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-
-    .fact-check {
-      flex-shrink: 0;
-      width: 32px;
-      height: 32px;
-      background: var(--charcoal);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2px;
-    }
-
-    .fact-check svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    .fact-item p {
+    .aud-tab {
+      border: none;
+      background: transparent;
+      color: var(--ink-2);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-family: var(--font-body);
+      font-size: 13px;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 1.6;
-      max-width: none;
+      transition: all 0.2s ease;
     }
-
-    /* ---- QUOTE FORM ---- */
-    .quote-section {
-      background: var(--off-white);
+    .aud-tab[aria-selected="true"] {
+      background: var(--ink);
+      color: var(--bg);
     }
+    .aud-tab:hover:not([aria-selected="true"]) { color: var(--ink); }
 
-    .quote-layout {
+    .aud-content {
       display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 80px;
-      align-items: start;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(24px, 4vw, 56px);
+      align-items: stretch;
     }
+    @media (max-width: 900px) { .aud-content { grid-template-columns: 1fr; } }
 
-    .quote-info h2 {
-      margin-bottom: 16px;
+    .aud-copy h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 16px 0 16px;
     }
-
-    .quote-info > p {
-      color: var(--charcoal-soft);
-      margin-bottom: 40px;
-      font-size: 16px;
+    .aud-copy h3 em { font-style: italic; color: var(--accent-deep); }
+    .aud-copy ul {
+      list-style: none;
+      padding: 0;
+      margin: 28px 0 0;
+      display: grid;
+      gap: 12px;
     }
-
-    .quote-contact-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-
-    .quote-contact-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--yellow-light);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .quote-contact-item span {
-      font-weight: 500;
+    .aud-copy li {
+      display: flex; gap: 14px; align-items: start;
+      padding: 14px 0;
+      border-top: 1px solid var(--rule);
       font-size: 15px;
-      color: var(--grey-text);
-      display: block;
-      margin-bottom: 2px;
+      color: var(--ink-2);
+    }
+    .aud-copy li::before {
+      content: "→";
+      color: var(--accent-deep);
+      font-family: var(--font-mono);
+      font-size: 14px;
     }
 
-    .quote-contact-item strong {
-      font-size: 17px;
-      color: var(--charcoal);
+    .aud-card {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      background: var(--bg-2);
+      display: flex; flex-direction: column; gap: 20px;
+      position: relative;
+      overflow: hidden;
     }
-
-    .quote-form {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 48px;
-      border: 1px solid var(--grey-light);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    .aud-card .ph {
+      aspect-ratio: 4 / 3;
+      border-radius: var(--radius);
     }
-
-    .form-grid {
+    .aud-card-meta {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 16px;
+    }
+    .aud-card-meta > div {
+      border-top: 1px solid var(--rule);
+      padding-top: 12px;
+    }
+    .aud-card-meta .k {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3);
+    }
+    .aud-card-meta .v {
+      font-family: var(--font-display);
+      font-size: 22px; line-height: 1.1; margin-top: 4px;
+      letter-spacing: -0.01em;
     }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
+    .areas {
+      padding: clamp(48px, 7vw, 100px) 0;
+      border-top: 1px solid var(--rule);
+      background: var(--bg-2);
     }
-
-    .form-group.full-width {
-      grid-column: 1 / -1;
+    .areas-head {
+      display: flex; justify-content: space-between; align-items: end;
+      gap: 32px; flex-wrap: wrap;
     }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: clamp(24px, 4vw, 56px);
+      margin-top: 48px;
+    }
+    @media (max-width: 900px) { .areas-grid { grid-template-columns: 1fr; } }
 
-    .form-group label {
-      font-weight: 600;
-      font-size: 13px;
-      text-transform: uppercase;
+    .map-frame {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      background: var(--bg);
+      padding: 18px;
+      position: sticky;
+      top: 80px;
+      align-self: start;
+    }
+    .map-frame svg { width: 100%; height: auto; }
+    .map-legend {
+      display: flex; gap: 18px; flex-wrap: wrap;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-3);
       letter-spacing: 0.06em;
-      color: var(--charcoal-soft);
-      margin-bottom: 8px;
+      text-transform: uppercase;
+      padding: 14px 8px 4px;
+    }
+    .map-legend .swatch {
+      display: inline-block; width: 10px; height: 10px;
+      border-radius: 2px; margin-right: 6px; vertical-align: -1px;
     }
 
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
+    .region-block {
+      border-top: 1px solid var(--rule);
+      padding: 24px 0;
+    }
+    .region-block:last-child { border-bottom: 1px solid var(--rule); }
+    .region-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 14px;
+      cursor: pointer;
+    }
+    .region-head h4 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+    .region-head .count {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+    .region-block.active .region-head h4 em {
+      font-style: italic;
+      color: var(--accent-deep);
+    }
+    .cities {
+      display: flex; flex-wrap: wrap; gap: 6px 4px;
+    }
+    .city {
+      padding: 6px 12px;
+      font-size: 13px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--ink-2);
+      transition: all 0.15s ease;
+      cursor: pointer;
       font-family: var(--font-body);
-      font-size: 16px;
-      padding: 14px 16px;
-      border: 2px solid var(--grey-light);
-      border-radius: 10px;
-      background: var(--off-white);
-      color: var(--charcoal);
-      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .city:hover {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+    .city.active {
+      background: var(--accent);
+      color: var(--ink);
+      border-color: var(--accent);
+    }
+
+    .quote {
+      padding: clamp(48px, 7vw, 100px) 0;
+      border-top: 1px solid var(--rule);
+    }
+    .quote-head { display: flex; justify-content: space-between; align-items: end; gap: 32px; flex-wrap: wrap; margin-bottom: 40px; }
+    .quote-shell {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: clamp(24px, 4vw, 56px);
+      align-items: stretch;
+    }
+    @media (max-width: 900px) { .quote-shell { grid-template-columns: 1fr; } }
+
+    .quote-form {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 4vw, 40px);
+      background: var(--bg);
+    }
+    .stepper {
+      display: flex; gap: 4px; padding: 4px;
+      background: var(--bg-2);
+      border-radius: 999px;
+      margin-bottom: 32px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .step {
+      flex: 1;
+      padding: 10px;
+      border-radius: 999px;
+      text-align: center;
+      color: var(--ink-3);
+      border: none;
+      background: transparent;
+      transition: all 0.2s ease;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .step.current {
+      background: var(--ink);
+      color: var(--bg);
+    }
+    .step.done { color: var(--accent-deep); }
+
+    .step-panel { display: none; }
+    .step-panel.current { display: grid; gap: 18px; }
+
+    .field-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .field-grid .full { grid-column: 1 / -1; }
+    @media (max-width: 600px) { .field-grid { grid-template-columns: 1fr; } }
+
+    .field {
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .field label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      font: inherit;
+      padding: 13px 16px;
+      border: 1px solid var(--rule);
+      background: var(--bg-2);
+      border-radius: 12px;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      font-size: 15px;
+      font-family: var(--font-body);
+    }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--ink);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent);
+    }
+    .field textarea { resize: vertical; min-height: 100px; }
+
+    .choice-row { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+    .choice {
+      border: 1px solid var(--rule);
+      background: var(--bg-2);
+      padding: 16px 18px;
+      border-radius: 12px;
+      text-align: left;
+      transition: all 0.15s ease;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .choice .t { font-weight: 500; font-size: 14px; color: var(--ink); }
+    .choice .s { font-size: 12px; color: var(--ink-3); }
+    .choice:hover { border-color: var(--ink-3); }
+    .choice.active {
+      border-color: var(--ink);
+      background: var(--bg);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent);
+    }
+
+    .slider-block {
+      display: flex; flex-direction: column; gap: 8px;
+      padding: 18px;
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      background: var(--bg-2);
+    }
+    .slider-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+    .slider-head .v {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      text-transform: none;
+    }
+    .slider-foot {
+      display: flex; justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink-3);
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 4px;
+      background: var(--rule-strong);
+      border-radius: 4px;
       outline: none;
     }
-
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--yellow);
-      box-shadow: 0 0 0 4px rgba(255, 209, 0, 0.15);
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px; height: 22px;
+      background: var(--ink);
+      border: 4px solid var(--accent);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: var(--shadow-1);
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 22px; height: 22px;
+      background: var(--ink);
+      border: 4px solid var(--accent);
+      border-radius: 50%;
+      cursor: pointer;
     }
 
-    .form-group textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .form-submit-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+    .form-nav {
+      display: flex; justify-content: space-between; align-items: center;
       margin-top: 28px;
+      gap: 14px; flex-wrap: wrap;
     }
 
-    .form-submit-row .btn-primary {
-      padding: 16px 40px;
-      font-size: 17px;
+    .estimate {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      background: var(--ink);
+      color: var(--bg);
+      padding: clamp(24px, 4vw, 40px);
+      position: sticky;
+      top: 80px;
+      align-self: start;
+      display: flex; flex-direction: column; gap: 24px;
+      overflow: hidden;
     }
-
-    .form-phone {
-      font-size: 15px;
-      color: var(--grey-text);
-      text-align: right;
+    .estimate::before {
+      content: "";
+      position: absolute;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+      opacity: 0.15;
+      top: -120px; right: -120px;
+      pointer-events: none;
     }
-
-    .form-phone a {
-      display: block;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--charcoal);
-      margin-top: 4px;
+    .estimate .eyebrow { color: color-mix(in srgb, var(--bg) 60%, transparent); }
+    .estimate .eyebrow::before { background: color-mix(in srgb, var(--bg) 50%, transparent); }
+    .est-num {
       font-family: var(--font-display);
+      font-size: clamp(52px, 7vw, 96px);
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      color: var(--bg);
+      position: relative;
+    }
+    .est-num em { font-style: italic; color: var(--accent); }
+    .est-range {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--bg) 70%, transparent);
+      margin-top: 8px;
+    }
+    .est-list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 10px;
+      position: relative;
+    }
+    .est-list li {
+      display: flex; justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      padding: 10px 0;
+      border-top: 1px solid color-mix(in srgb, var(--bg) 18%, transparent);
+    }
+    .est-list li:first-child { border-top: 1px solid color-mix(in srgb, var(--bg) 30%, transparent); }
+    .est-list .v { color: var(--bg); }
+    .est-list .k { color: color-mix(in srgb, var(--bg) 65%, transparent); text-transform: uppercase; }
+
+    .est-note {
+      font-size: 13px;
+      color: color-mix(in srgb, var(--bg) 70%, transparent);
+      line-height: 1.55;
+      position: relative;
+      margin: 0;
     }
 
-    /* ---- FOOTER ---- */
-    footer {
-      background: var(--charcoal);
-      color: var(--grey-mid);
-      padding: 48px 0;
+    .submitted {
+      padding: 40px 8px;
+      text-align: center;
     }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .submitted h3 {
+      font-family: var(--font-display); font-weight: 400;
+      font-size: 44px; line-height: 1.05; margin: 16px 0; letter-spacing: -0.02em;
     }
+    .submitted h3 em { font-style: italic; color: var(--accent-deep); }
 
-    .footer-logo {
+    .faq {
+      padding: clamp(48px, 7vw, 100px) 0;
+      border-top: 1px solid var(--rule);
+      background: var(--bg-2);
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: clamp(24px, 4vw, 80px);
+      margin-top: 32px;
+    }
+    @media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; } }
+    .faq-list { border-top: 1px solid var(--rule); }
+    .faq-item {
+      border-bottom: 1px solid var(--rule);
+      padding: 22px 0;
+      cursor: pointer;
+    }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px;
       font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 20px;
-      color: var(--white);
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
     }
-
-    .footer-logo .ez {
-      background: var(--yellow);
-      color: var(--charcoal);
-      padding: 1px 6px;
-      border-radius: 3px;
-      margin-right: 3px;
-    }
-
-    footer p {
+    .faq-q .plus {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--rule-strong);
+      display: grid; place-items: center;
+      font-family: var(--font-mono);
       font-size: 14px;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+    .faq-item.open .plus {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, margin 0.3s ease;
+      color: var(--ink-2);
+      font-size: 15.5px;
+      line-height: 1.65;
+    }
+    .faq-a-inner { padding-top: 8px; }
+    .faq-item.open .faq-a {
+      max-height: 500px;
+      margin-top: 16px;
     }
 
-    footer a {
-      color: var(--yellow);
+    .foot {
+      padding: clamp(48px, 6vw, 80px) 0 32px;
+      border-top: 1px solid var(--rule);
+      background: var(--ink);
+      color: color-mix(in srgb, var(--bg) 80%, transparent);
+    }
+    .foot-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid color-mix(in srgb, var(--bg) 14%, transparent);
+    }
+    @media (max-width: 800px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+    .foot .brand { color: var(--bg); margin-bottom: 18px; }
+    .foot h5 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--bg) 60%, transparent);
+      font-weight: 500;
+      margin: 0 0 16px;
+    }
+    .foot ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 14px; }
+    .foot a { color: color-mix(in srgb, var(--bg) 80%, transparent); text-decoration: none; }
+    .foot a:hover { color: var(--bg); }
+    .foot-bottom {
+      padding-top: 24px;
+      display: flex; justify-content: space-between; gap: 16px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: color-mix(in srgb, var(--bg) 50%, transparent);
+      text-transform: uppercase;
+      flex-wrap: wrap;
     }
 
-    /* ---- ANIMATIONS ---- */
+    .hp { position: absolute; left: -5000px; width: 1px; height: 1px; overflow: hidden; }
+
     .reveal {
       opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      transform: translateY(14px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
-
-    .reveal.visible {
+    .reveal.in {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
 
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+    /* ---- Responsive tuning ---- */
+    html, body { overflow-x: hidden; }
 
-    /* ---- MOBILE ---- */
+    @media (hover: none) {
+      .btn:hover { transform: none; box-shadow: none; }
+      .btn:hover .arrow { transform: none; }
+    }
+
     @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        padding: 24px;
-        gap: 20px;
-        border-bottom: 1px solid var(--grey-light);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-      }
-      .mobile-toggle { display: block; }
+      .map-frame, .estimate { position: static; top: auto; }
+      .hero-grid { gap: 40px; }
+      .hero-side { flex-direction: row; gap: 12px; flex-wrap: wrap; }
+      .hero-side .hero-stat { flex: 1 1 140px; }
+      .aud-head { flex-direction: column; align-items: stretch; gap: 20px; }
+      .aud-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .aud-tabs::-webkit-scrollbar { display: none; }
+      .aud-tab { white-space: nowrap; }
+      .areas-head { flex-direction: column; align-items: stretch; }
+      .quote-head { flex-direction: column; align-items: stretch; }
+    }
 
-      .hero { padding: 120px 0 80px; }
-      section { padding: 72px 0; }
+    @media (max-width: 700px) {
+      .hero { padding: 40px 0 56px; }
+      .hero-meta { gap: 10px; margin-bottom: 20px; }
+      .hero-meta > span:not(.dot) { font-size: 10px; }
+      .h-display { font-size: clamp(48px, 12vw, 72px); }
+      .hero-cta-row .btn { width: 100%; justify-content: center; }
+      .hero-stat { padding-top: 12px; }
+      .hero-stat .num { font-size: clamp(30px, 9vw, 44px); }
+      .hero-marquee { margin-top: 40px; }
 
-      .use-cases-grid { grid-template-columns: 1fr; }
-      .stats-row { grid-template-columns: 1fr; gap: 32px; }
-      .facts-grid { grid-template-columns: 1fr; }
+      .aud-section, .areas, .quote, .faq { padding: 56px 0; }
+      .aud-card { padding: 20px; }
+      .aud-card-meta { gap: 12px; }
+      .aud-card-meta .v { font-size: 18px; }
 
-      .quote-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
+      .map-frame { padding: 12px; }
+      .map-legend { gap: 12px; font-size: 10px; }
 
-      .quote-form { padding: 32px 24px; }
-      .form-grid { grid-template-columns: 1fr; }
+      .quote-form { padding: 22px; }
+      .stepper { flex-wrap: wrap; border-radius: 16px; gap: 2px; }
+      .step { flex: 1 1 calc(50% - 2px); padding: 9px 6px; font-size: 10px; letter-spacing: 0.06em; }
+      .form-nav .btn { flex: 1; justify-content: center; }
 
-      .form-submit-row {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-      }
+      /* Prevent iOS zoom-on-focus */
+      .field input, .field select, .field textarea { font-size: 16px; }
 
-      .form-phone { text-align: center; }
+      .est-num { font-size: clamp(44px, 14vw, 72px); }
 
-      .footer-inner {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-      }
+      .faq-q { font-size: 20px; }
 
-      .answer-box {
-        padding: 20px 24px;
-      }
+      .foot-grid { gap: 28px; padding-bottom: 32px; }
+      .foot-bottom { flex-direction: column; gap: 8px; }
     }
 
     @media (max-width: 480px) {
-      .hero h1 { font-size: 2.4rem; }
-      .use-case-card { padding: 28px; }
+      .h-display { font-size: clamp(44px, 13vw, 64px); }
+      .h-section { font-size: clamp(30px, 8.5vw, 40px); line-height: 1.05; }
+      .aud-copy h3 { font-size: clamp(26px, 7.5vw, 36px); }
     }
-  </style>
+
+    @media (max-width: 440px) {
+      .nav-inner { padding: 10px 0; }
+      .brand { font-size: 20px; gap: 10px; }
+      .brand-mark { width: 30px; height: 30px; font-size: 12px; }
+      .choice-row { grid-template-columns: 1fr 1fr; }
+      .aud-card-meta { grid-template-columns: 1fr; }
+      .submitted h3 { font-size: 28px; }
+    }
+</style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="logo" aria-label="EZ Buses Home">
-        <span class="ez">EZ</span><span>buses</span>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">EZ</span>
+        <span>EZ Buses</span>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#areas">Areas</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#facts">Quick Facts</a></li>
-        <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
-      </ul>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-links">
+        <a href="#who">Charters</a>
+        <a href="#areas">Service area</a>
+        <a href="#faq">FAQ</a>
+        <span class="nav-phone">DISPATCH · <a href="tel:4164387371"><strong>(416) 438 — 7371</strong></a></span>
+        <a href="#quote" class="btn nav-cta" style="padding:10px 18px;font-size:13px;">
+          Quote <span class="arrow" style="width:18px;height:18px;font-size:11px;">→</span>
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero" id="home">
-    <div class="container hero-content">
-      <div class="reveal">
-        <h1>Charter buses<br>for <span class="highlight">Toronto</span><br>&amp; the GTA</h1>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-meta">
+        <span class="dot"></span>
+        <span id="dispatch-status">DISPATCH ONLINE · TORONTO</span>
+        <span>·</span>
+        <span id="next-available">NEXT AVAILABLE · TOMORROW</span>
       </div>
-      <p class="hero-sub reveal reveal-delay-1">
-        School buses and fully equipped coaches for field trips, sports teams, corporate events, weddings, and private groups across Ontario.
-      </p>
-      <div class="hero-actions reveal reveal-delay-2">
-        <a href="#quote" class="btn-primary">
-          Get a Free Quote
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="tel:4164387371" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          416-438-7371
-        </a>
+      <div class="hero-grid">
+        <div>
+          <h1 class="h-display">
+            The bus<br>
+            <em>shows up.</em><br>
+            On time.
+          </h1>
+          <p class="lede" style="margin-top:28px;">
+            Charter school buses and coaches across the GTA, Ontario, and into the
+            northeast US. Family-run for 20+ years. The dispatcher answers her own phone.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#quote" class="btn">
+              Get a 60-second quote
+              <span class="arrow">→</span>
+            </a>
+            <a href="tel:4164387371" class="btn btn-ghost">
+              Call dispatch
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-stat">
+            <div class="num"><em>15,000</em></div>
+            <div class="label">Trips since 2006 · 0 incidents</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">46–56</div>
+            <div class="label">Seats per vehicle</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num"><em>4</em> boards</div>
+            <div class="label">TDSB · TCDSB · YRDSB · YRCDSB</div>
+          </div>
+        </div>
       </div>
-
-      <!-- Direct Answer Box for AI crawlers -->
-      <aside class="answer-box reveal reveal-delay-3" role="complementary" aria-label="Company summary">
-        <p><strong>EZ Buses</strong> is a charter bus company providing school buses and coach rentals for private groups in Toronto and the Greater Toronto Area.</p>
-      </aside>
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="scroll">
+          <span>Field trips</span><span class="star">✦</span>
+          <span>Tournament travel</span><span class="star">✦</span>
+          <span>Cross-border charters</span><span class="star">✦</span>
+          <span>Corporate shuttles</span><span class="star">✦</span>
+          <span>Wedding loops</span><span class="star">✦</span>
+          <span>Senior outings</span><span class="star">✦</span>
+          <span>Field trips</span><span class="star">✦</span>
+          <span>Tournament travel</span><span class="star">✦</span>
+          <span>Cross-border charters</span><span class="star">✦</span>
+          <span>Corporate shuttles</span><span class="star">✦</span>
+          <span>Wedding loops</span><span class="star">✦</span>
+          <span>Senior outings</span><span class="star">✦</span>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Track Record -->
-  <section class="track-record" aria-label="Company track record">
-    <div class="container">
-      <span class="section-label reveal">Proven Track Record</span>
-      <h2 class="reveal reveal-delay-1">15,000+ incident-free trips</h2>
-      <p class="reveal reveal-delay-2">EZ Buses has completed over 15,000 incident-free trips across Ontario and the US border over the last 20 years. Safety and reliability aren't selling points — they're the baseline.</p>
-      <div class="stats-row">
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-number">20+</div>
-          <div class="stat-label">Years in operation</div>
+  <section class="aud-section reveal" id="who">
+    <div class="wrap">
+      <div class="aud-head">
+        <div>
+          <span class="eyebrow">Who we drive</span>
+          <h2 class="h-section" style="margin-top:12px;">
+            We work with <em>specific people</em>,<br>not vague audiences.
+          </h2>
         </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-number">15,000+</div>
-          <div class="stat-label">Incident-free trips</div>
+        <div class="aud-tabs" role="tablist" id="aud-tabs"></div>
+      </div>
+      <div class="aud-content">
+        <div class="aud-copy">
+          <span class="eyebrow" id="aud-eyebrow"></span>
+          <h3 id="aud-title"></h3>
+          <p class="lede" id="aud-body"></p>
+          <ul id="aud-points"></ul>
         </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-number">46</div>
-          <div class="stat-label">Passengers per bus</div>
+        <div class="aud-card">
+          <div class="placeholder ph" id="aud-ph"></div>
+          <div class="aud-card-meta" id="aud-meta"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Use Cases / Services -->
-  <section class="use-cases" id="services">
-    <div class="container">
-      <span class="section-label reveal">What We Do</span>
-      <h2 class="reveal reveal-delay-1">Built for real trips,<br>not brochure copy</h2>
-      <div class="use-cases-grid">
-
-        <article class="use-case-card reveal reveal-delay-1">
-          <div class="use-case-icon">🎒</div>
-          <h3>Toronto School Field Trips</h3>
-          <p>Trusted by TDSB, TCDSB, YRDSB, and YRCDSB schools for curriculum-aligned outings across the GTA. Our drivers are experienced with student groups and every vehicle meets Ontario Ministry of Transportation standards. From museums and science centres to outdoor education campuses — we handle the logistics so teachers can focus on the kids.</p>
-        </article>
-
-        <article class="use-case-card reveal reveal-delay-2">
-          <div class="use-case-icon">🏀</div>
-          <h3>Multi-Day Cross-Border Sports Trips</h3>
-          <p>Hockey tournaments in Buffalo, basketball showcases in Michigan, soccer camps across the northeast — we've done them all. Our coach buses are equipped for long-haul comfort with reclining seats, A/C, and onboard restrooms. We carry all required cross-border documentation so your team clears customs without delays.</p>
-        </article>
-
-        <article class="use-case-card reveal reveal-delay-3">
-          <div class="use-case-icon">🏢</div>
-          <h3>Corporate Event Shuttles in the GTA</h3>
-          <p>Running a conference, team offsite, or company holiday party? We provide reliable shuttle loops between hotels, venues, and offices throughout the Greater Toronto Area. Consistent timing, professional drivers, and clean vehicles — because your company's reputation rides with us.</p>
-        </article>
-
-        <article class="use-case-card reveal reveal-delay-4">
-          <div class="use-case-icon">💍</div>
-          <h3>Wedding &amp; Private Party Bus Rentals</h3>
-          <p>Keep your wedding day moving smoothly with dedicated guest shuttles between ceremony, reception, and hotels. Also available for milestone birthdays, reunions, and private events. We'll work around your timeline so no one's left figuring out parking or directions.</p>
-        </article>
-
+  <section class="areas reveal" id="areas">
+    <div class="wrap">
+      <div class="areas-head">
+        <div>
+          <span class="eyebrow">Service map</span>
+          <h2 class="h-section" style="margin-top:12px;">
+            Anywhere in the <em>905</em>,<br>most of the 416,<br>occasionally Buffalo.
+          </h2>
+        </div>
+        <p class="lede">
+          Click a region to see what we cover. Don't see your city? We probably still
+          do — call dispatch.
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- Areas Served -->
-  <section class="areas-served" id="areas">
-    <div class="container">
-      <span class="section-label reveal">Areas Served</span>
-      <h2 class="reveal reveal-delay-1">The entire GTA<br>&amp; beyond</h2>
-      <div class="areas-layout">
-
-        <div class="areas-map reveal reveal-delay-2">
-          <svg viewBox="0 0 800 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the Greater Toronto Area showing EZ Buses service regions">
-            <title>Greater Toronto Area — EZ Buses Service Map</title>
+      <div class="areas-grid">
+        <div id="region-list"></div>
+        <div class="map-frame">
+          <svg id="gta-map" viewBox="0 0 540 440" role="img" aria-label="GTA service area">
             <defs>
-              <style>
-                .map-region { stroke: #fff; stroke-width: 2; cursor: pointer; transition: fill 0.25s, filter 0.25s; }
-                .map-region:hover { filter: brightness(0.92); }
-                .map-label-region { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; fill: #1C1C1C; pointer-events: none; }
-                .map-label-city { font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 11px; fill: #3A3A3A; pointer-events: none; }
-                .map-label-water { font-family: 'Urbanist', sans-serif; font-weight: 600; font-size: 15px; fill: #5B9BD5; font-style: italic; pointer-events: none; }
-                .map-dot { fill: #1C1C1C; pointer-events: none; }
-                .map-water { fill: #D6EAF8; stroke: none; }
-              </style>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule)" stroke-width="0.6"/>
+              </pattern>
             </defs>
-
-            <!-- Lake Ontario -->
-            <path class="map-water" d="M340,580 Q400,540 500,550 Q600,545 700,560 Q780,570 800,590 L800,680 L0,680 L0,640 Q60,620 140,610 Q240,595 340,580Z"/>
-            <text class="map-label-water" x="560" y="620">Lake Ontario</text>
-
-            <!-- Lake Simcoe -->
-            <path class="map-water" d="M380,10 Q400,0 430,5 Q460,0 480,10 Q490,30 485,60 Q480,90 460,100 Q440,108 420,100 Q395,90 385,65 Q378,40 380,10Z"/>
-            <text class="map-label-water" x="410" y="55" text-anchor="middle" font-size="11">Lake Simcoe</text>
-
-            <!-- Lake Scugog -->
-            <path class="map-water" d="M600,80 Q610,70 625,75 Q635,80 635,95 Q632,115 620,120 Q608,118 602,105 Q598,92 600,80Z"/>
-            <text class="map-label-water" x="618" y="72" text-anchor="middle" font-size="10">Lake Scugog</text>
-
-            <!-- HALTON region -->
-            <path class="map-region" d="M30,370 L130,310 L175,340 L175,430 L165,500 L140,560 L100,580 L50,570 L20,520 L10,450Z" fill="#FDEBD0"/>
-            <text class="map-label-region" x="85" y="470" text-anchor="middle" font-size="16">HALTON</text>
-            <circle class="map-dot" cx="100" cy="510" r="3"/><text class="map-label-city" x="108" y="514">Burlington</text>
-            <circle class="map-dot" cx="120" cy="485" r="3"/><text class="map-label-city" x="83" y="489" text-anchor="end">Oakville</text>
-            <circle class="map-dot" cx="70" cy="440" r="3"/><text class="map-label-city" x="78" y="444">Milton</text>
-            <circle class="map-dot" cx="105" cy="390" r="3"/><text class="map-label-city" x="68" y="385" text-anchor="end">Halton Hills</text>
-
-            <!-- PEEL region -->
-            <path class="map-region" d="M130,310 L175,250 L220,200 L260,220 L290,280 L290,380 L250,440 L200,480 L175,430 L175,340Z" fill="#D5F5E3"/>
-            <text class="map-label-region" x="225" y="350" text-anchor="middle" font-size="16">PEEL</text>
-            <circle class="map-dot" cx="200" cy="310" r="3"/><text class="map-label-city" x="208" y="314">Brampton</text>
-            <circle class="map-dot" cx="230" cy="420" r="3"/><text class="map-label-city" x="195" y="424" text-anchor="end">Mississauga</text>
-            <circle class="map-dot" cx="195" cy="250" r="3"/><text class="map-label-city" x="157" y="254" text-anchor="end">Caledon</text>
-
-            <!-- YORK region -->
-            <path class="map-region" d="M260,220 L290,160 L310,110 L370,80 L460,100 L490,130 L490,220 L460,280 L400,310 L340,340 L290,280Z" fill="#FEF9E7"/>
-            <text class="map-label-region" x="385" y="210" text-anchor="middle">YORK</text>
-            <circle class="map-dot" cx="370" cy="145" r="3"/><text class="map-label-city" x="378" y="142">Newmarket</text>
-            <circle class="map-dot" cx="345" cy="165" r="3"/><text class="map-label-city" x="308" y="169" text-anchor="end">Aurora</text>
-            <circle class="map-dot" cx="320" cy="200" r="3"/><text class="map-label-city" x="290" y="204" text-anchor="end">King</text>
-            <circle class="map-dot" cx="420" cy="170" r="3"/><text class="map-label-city" x="395" y="182" text-anchor="end">Stouffville</text>
-            <circle class="map-dot" cx="380" cy="240" r="3"/><text class="map-label-city" x="355" y="255" text-anchor="end">Richmond Hill</text>
-            <circle class="map-dot" cx="330" cy="260" r="3"/><text class="map-label-city" x="305" y="266" text-anchor="end">Vaughan</text>
-            <circle class="map-dot" cx="430" cy="260" r="3"/><text class="map-label-city" x="438" y="264">Markham</text>
-            <circle class="map-dot" cx="350" cy="105" r="3"/><text class="map-label-city" x="315" y="100" text-anchor="end">E. Gwillimbury</text>
-            <circle class="map-dot" cx="390" cy="95" r="3"/><text class="map-label-city" x="398" y="87">Georgina</text>
-
-            <!-- CITY OF TORONTO -->
-            <path class="map-region" d="M290,380 L290,280 L340,340 L400,310 L460,280 L490,310 L500,380 L490,440 L440,500 L360,540 L280,550 L250,510 L250,440Z" fill="#FFD100" fill-opacity="0.3" stroke="#FFD100" stroke-width="3"/>
-            <text class="map-label-region" x="385" y="400" text-anchor="middle" font-size="15">CITY OF</text>
-            <text class="map-label-region" x="385" y="422" text-anchor="middle">TORONTO</text>
-            <circle cx="390" cy="460" r="4" fill="#FFD100" stroke="#1C1C1C" stroke-width="2"/>
-            <circle class="map-dot" cx="320" cy="440" r="3"/><text class="map-label-city" x="290" y="444" text-anchor="end">Etobicoke</text>
-            <circle class="map-dot" cx="340" cy="480" r="3"/><text class="map-label-city" x="310" y="490" text-anchor="end">York</text>
-            <circle class="map-dot" cx="430" cy="360" r="3"/><text class="map-label-city" x="438" y="357">North York</text>
-            <circle class="map-dot" cx="470" cy="400" r="3"/><text class="map-label-city" x="478" y="397">Scarborough</text>
-            <circle class="map-dot" cx="400" cy="490" r="3"/><text class="map-label-city" x="408" y="493">East York</text>
-
-            <!-- DURHAM region -->
-            <path class="map-region" d="M490,130 L460,100 Q470,80 500,50 Q540,30 580,25 Q640,20 700,40 Q740,55 760,80 L760,200 L740,300 L700,400 L640,480 L560,530 L500,540 L490,440 L500,380 L490,310 L490,220Z" fill="#E8DAEF" fill-opacity="0.5"/>
-            <text class="map-label-region" x="620" y="210" text-anchor="middle">DURHAM</text>
-            <circle class="map-dot" cx="510" cy="360" r="3"/><text class="map-label-city" x="518" y="356">Pickering</text>
-            <circle class="map-dot" cx="540" cy="400" r="3"/><text class="map-label-city" x="548" y="404">Ajax</text>
-            <circle class="map-dot" cx="590" cy="370" r="3"/><text class="map-label-city" x="598" y="374">Whitby</text>
-            <circle class="map-dot" cx="630" cy="340" r="3"/><text class="map-label-city" x="638" y="337">Oshawa</text>
-            <circle class="map-dot" cx="710" cy="290" r="3"/><text class="map-label-city" x="698" y="286" text-anchor="end">Clarington</text>
-            <circle class="map-dot" cx="540" cy="180" r="3"/><text class="map-label-city" x="548" y="184">Uxbridge</text>
-            <circle class="map-dot" cx="620" cy="120" r="3"/><text class="map-label-city" x="628" y="117">Scugog</text>
-            <circle class="map-dot" cx="560" cy="60" r="3"/><text class="map-label-city" x="555" y="55" text-anchor="end">Brock</text>
-
-            <!-- Map title -->
-            <text x="780" y="30" text-anchor="end" font-family="Syne, sans-serif" font-weight="800" font-size="22" fill="#1C1C1C">GREATER TORONTO</text>
-            <text x="780" y="52" text-anchor="end" font-family="Syne, sans-serif" font-weight="800" font-size="22" fill="#1C1C1C">AREA</text>
-
-            <!-- Legend dot -->
-            <circle cx="660" cy="640" r="5" fill="#FFD100" stroke="#1C1C1C" stroke-width="2"/>
-            <text x="672" y="644" font-family="Urbanist, sans-serif" font-weight="600" font-size="12" fill="#1C1C1C">EZ Buses HQ — Toronto</text>
+            <rect width="540" height="440" fill="url(#grid)"/>
+            <path d="M 0 380 Q 270 460 540 380 L 540 440 L 0 440 Z"
+                  fill="var(--calm-soft)" stroke="var(--rule)" stroke-width="1"/>
+            <text x="270" y="420" text-anchor="middle"
+                  font-family="var(--font-mono)" font-size="10"
+                  letter-spacing="2" fill="var(--ink-3)">LAKE ONTARIO</text>
+            <g id="map-lines"></g>
+            <g id="map-nodes"></g>
+            <g transform="translate(490 50)">
+              <circle r="22" fill="var(--bg)" stroke="var(--rule)"/>
+              <text y="-8" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--ink-3)">N</text>
+              <line x1="0" y1="-4" x2="0" y2="14" stroke="var(--accent-deep)" stroke-width="1.5"/>
+              <polygon points="0,-6 -3,2 3,2" fill="var(--accent-deep)"/>
+            </g>
           </svg>
-        </div>
-
-        <div class="areas-list reveal reveal-delay-3">
-
-          <div class="area-region">
-            <h3>Toronto</h3>
-            <div class="area-cities">
-              <span class="area-city">Downtown Toronto</span>
-              <span class="area-city">North York</span>
-              <span class="area-city">Scarborough</span>
-              <span class="area-city">Etobicoke</span>
-              <span class="area-city">East York</span>
-              <span class="area-city">York</span>
-            </div>
+          <div class="map-legend">
+            <span><span class="swatch" style="background:var(--accent);"></span>Selected</span>
+            <span><span class="swatch" style="background:var(--bg-2);border:1px solid var(--rule-strong);"></span>Region</span>
+            <span><span class="swatch" style="background:var(--calm-soft);"></span>Lake Ontario</span>
           </div>
-
-          <div class="area-region">
-            <h3>Durham Region</h3>
-            <div class="area-cities">
-              <span class="area-city">Pickering</span>
-              <span class="area-city">Ajax</span>
-              <span class="area-city">Whitby</span>
-              <span class="area-city">Oshawa</span>
-              <span class="area-city">Clarington</span>
-              <span class="area-city">Uxbridge</span>
-              <span class="area-city">Brock</span>
-              <span class="area-city">Scugog</span>
-            </div>
-          </div>
-
-          <div class="area-region">
-            <h3>York Region</h3>
-            <div class="area-cities">
-              <span class="area-city">Markham</span>
-              <span class="area-city">Richmond Hill</span>
-              <span class="area-city">Vaughan</span>
-              <span class="area-city">Newmarket</span>
-              <span class="area-city">Aurora</span>
-              <span class="area-city">Stouffville</span>
-              <span class="area-city">King City</span>
-              <span class="area-city">Georgina</span>
-              <span class="area-city">East Gwillimbury</span>
-            </div>
-          </div>
-
-          <div class="area-region">
-            <h3>Peel Region</h3>
-            <div class="area-cities">
-              <span class="area-city">Mississauga</span>
-              <span class="area-city">Brampton</span>
-              <span class="area-city">Caledon</span>
-            </div>
-          </div>
-
-          <div class="area-region">
-            <h3>Halton Region</h3>
-            <div class="area-cities">
-              <span class="area-city">Oakville</span>
-              <span class="area-city">Burlington</span>
-              <span class="area-city">Milton</span>
-              <span class="area-city">Halton Hills</span>
-              <span class="area-city">Georgetown</span>
-            </div>
-          </div>
-
-          <div class="area-region">
-            <h3>Hamilton &amp; Niagara</h3>
-            <div class="area-cities">
-              <span class="area-city">Hamilton</span>
-              <span class="area-city">St. Catharines</span>
-              <span class="area-city">Niagara Falls</span>
-              <span class="area-city">Welland</span>
-            </div>
-          </div>
-
-          <div class="area-region">
-            <h3>Simcoe County</h3>
-            <div class="area-cities">
-              <span class="area-city">Barrie</span>
-              <span class="area-city">Orillia</span>
-              <span class="area-city">Innisfil</span>
-              <span class="area-city">Bradford</span>
-            </div>
-          </div>
-
-          <div class="areas-note">
-            <strong>Don't see your city?</strong> We serve all of Ontario and regularly run cross-border trips to New York, Michigan, Ohio, and Pennsylvania. <a href="#quote" style="color: var(--charcoal); text-decoration: underline;">Request a quote</a> for any destination.
-          </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <span class="section-label reveal">Common Questions</span>
-      <h2 class="reveal reveal-delay-1">Frequently asked</h2>
-      <div class="faq-list">
-
-        <div class="faq-item reveal reveal-delay-1">
-          <button class="faq-question" aria-expanded="false">How much does it cost to rent a school bus for a day in Toronto?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              School bus rental rates in Toronto vary depending on the distance, duration, and time of year. A typical full-day school bus charter within the GTA starts around $600–$900. For multi-day or long-distance trips, coach buses are priced separately. <a href="#quote">Contact us</a> or call <strong>416-438-7371</strong> for an exact quote tailored to your trip.
-            </div>
-          </div>
+  <section class="quote reveal" id="quote">
+    <div class="wrap">
+      <div class="quote-head">
+        <div>
+          <span class="eyebrow">Quote in 60 seconds</span>
+          <h2 class="h-section" style="margin-top:12px;">
+            Tell us about the trip.<br>Watch the <em>price land</em> live.
+          </h2>
         </div>
-
-        <div class="faq-item reveal reveal-delay-2">
-          <button class="faq-question" aria-expanded="false">Are your coach buses air-conditioned?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Yes. All EZ Buses coach buses are fully equipped with air conditioning, reclining seats, overhead storage, and onboard restrooms for maximum passenger comfort on long-distance trips.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal reveal-delay-3">
-          <button class="faq-question" aria-expanded="false">Do you travel across the border to the US?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Yes. EZ Buses regularly operates cross-border charter trips from Ontario to US destinations including New York, Michigan, Ohio, and Pennsylvania. Our drivers carry all required documentation and our vehicles meet both Canadian and US regulatory standards.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal reveal-delay-4">
-          <button class="faq-question" aria-expanded="false">How far in advance should we book a charter?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              We recommend booking at least 2–4 weeks in advance, especially during peak season (May through October). For large groups or multi-day trips, booking 6–8 weeks ahead ensures vehicle availability. That said, we do accommodate last-minute requests when possible — call <strong>416-438-7371</strong> to check availability.
-            </div>
-          </div>
-        </div>
-
+        <p class="lede">
+          Real numbers, not lead-gen forms. Submit and dispatch confirms within
+          two business hours, weekdays.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Quick Facts -->
-  <section class="quick-facts" id="facts" aria-label="Quick facts about EZ Buses">
-    <div class="container">
-      <span class="section-label" style="color: var(--charcoal-soft);">Quick Facts</span>
-      <h2 class="reveal">Why EZ Buses</h2>
-      <div class="facts-grid">
-
-        <div class="fact-item reveal reveal-delay-1">
-          <div class="fact-check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <p>Over 20 years of experience serving the Toronto area and beyond</p>
-        </div>
-
-        <div class="fact-item reveal reveal-delay-2">
-          <div class="fact-check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <p>Fully compliant with Ontario Ministry of Transportation inspection standards</p>
-        </div>
-
-        <div class="fact-item reveal reveal-delay-3">
-          <div class="fact-check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <p>Trusted by major school boards including TDSB, TCDSB, YRDSB, and YRCDSB</p>
-        </div>
-
-        <div class="fact-item reveal reveal-delay-4">
-          <div class="fact-check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <p>Fleet options include 46-passenger school buses and fully equipped coach buses</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Quote Form -->
-  <section class="quote-section" id="quote">
-    <div class="container">
-      <div class="quote-layout">
-        <div class="quote-info reveal">
-          <span class="section-label">Get Started</span>
-          <h2>Request a<br>free quote</h2>
-          <p>Tell us about your trip and we'll get back to you with a detailed quote, usually within the same business day.</p>
-
-          <div class="quote-contact-item">
-            <div class="quote-contact-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--charcoal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div>
-              <span>Phone</span>
-              <strong><a href="tel:4164387371">416-438-7371</a></strong>
-            </div>
-          </div>
-
-          <div class="quote-contact-item">
-            <div class="quote-contact-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--charcoal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <span>Email</span>
-              <strong><a href="mailto:ezbuses@gmail.com">ezbuses@gmail.com</a></strong>
-            </div>
-          </div>
-        </div>
-
-        <form class="quote-form reveal reveal-delay-2" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <div class="quote-shell">
+        <form class="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="quote-form">
           <input type="hidden" name="form-name" value="quote">
-          <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <p class="hp">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
 
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" id="name" name="Name" required>
+          <div class="stepper" id="stepper"></div>
+
+          <div id="form-body">
+            <div class="step-panel current" data-step="0">
+              <div class="field">
+                <label>Trip type</label>
+                <div class="choice-row" id="trip-type-row"></div>
+                <input type="hidden" name="trip_type" id="trip_type_input" value="school">
+              </div>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="pickup">Pickup region</label>
+                  <select id="pickup" name="pickup">
+                    <option>Toronto</option>
+                    <option>York Region</option>
+                    <option>Peel &amp; Halton</option>
+                    <option>Durham</option>
+                    <option>Other Ontario</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="trip-date">Trip date</label>
+                  <input type="date" id="trip-date" name="date">
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="organization">Organization</label>
-              <input type="text" id="organization" name="Organization">
+
+            <div class="step-panel" data-step="1">
+              <div class="field">
+                <label>Vehicle</label>
+                <div class="choice-row" id="vehicle-row"></div>
+                <input type="hidden" name="vehicle" id="vehicle_input" value="school">
+              </div>
+              <div class="slider-block">
+                <div class="slider-head">
+                  <span>Passengers</span>
+                  <span class="v" id="pax-v">40</span>
+                </div>
+                <input type="range" min="1" max="200" value="40" id="pax" name="passengers">
+                <div class="slider-foot">
+                  <span>1</span>
+                  <span id="pax-derived">1 bus · 46 seats avail.</span>
+                  <span>200</span>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="Email" required>
+
+            <div class="step-panel" data-step="2">
+              <div class="slider-block">
+                <div class="slider-head">
+                  <span>Duration</span>
+                  <span class="v" id="dur-v">8 hr</span>
+                </div>
+                <input type="range" min="2" max="24" value="8" id="dur" name="duration">
+              </div>
+              <div class="slider-block">
+                <div class="slider-head">
+                  <span>Round-trip distance</span>
+                  <span class="v" id="dist-v">80 km</span>
+                </div>
+                <input type="range" min="10" max="800" step="10" value="80" id="dist" name="distance">
+              </div>
+              <div class="choice-row">
+                <button type="button" class="choice" id="cross-border" data-on="0">
+                  <span class="t">Cross-border</span>
+                  <span class="s">+ paperwork &amp; docs</span>
+                </button>
+                <button type="button" class="choice" id="overnight" data-on="0">
+                  <span class="t">Overnight</span>
+                  <span class="s">+ driver lodging</span>
+                </button>
+                <input type="hidden" name="cross_border" id="cross_border_input" value="no">
+                <input type="hidden" name="overnight" id="overnight_input" value="no">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="Phone">
+
+            <div class="step-panel" data-step="3">
+              <div class="field-grid">
+                <div class="field full">
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" placeholder="Jane Park" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="jane@school.ca" required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input type="tel" id="phone" name="phone" placeholder="416 555 0140">
+                </div>
+                <div class="field full">
+                  <label for="notes">Anything dispatch should know?</label>
+                  <textarea id="notes" name="notes" placeholder="Wheelchair lift needed, multiple stops, allergy notes…"></textarea>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="passengers">Number of Passengers</label>
-              <input type="number" id="passengers" name="Number of Passengers" min="1">
+
+            <div class="step-panel" data-step="4" id="submitted-panel">
+              <div class="submitted">
+                <div class="eyebrow no-rule" style="justify-content:center;">QUOTE REQUESTED</div>
+                <h3>
+                  Thanks, <span id="thanks-name">there</span>.<br>
+                  <em>Dispatch is on it.</em>
+                </h3>
+                <p class="lede" style="margin:0 auto;">
+                  We'll confirm vehicle availability and the exact total to
+                  <strong id="thanks-email"></strong> within 2 business hours.
+                </p>
+                <div style="margin-top:24px;">
+                  <button type="button" class="btn btn-ghost" id="reset-quote">
+                    Quote another trip <span class="arrow">↻</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="departure-date">Departure Date</label>
-              <input type="date" id="departure-date" name="Departure Date">
-            </div>
-            <div class="form-group">
-              <label for="return-date">Return Date</label>
-              <input type="date" id="return-date" name="Return Date">
-            </div>
-            <div class="form-group">
-              <label for="times">Times</label>
-              <input type="text" id="times" name="Times" placeholder="e.g. 8:00 AM – 4:00 PM">
-            </div>
-            <div class="form-group">
-              <label for="departure-city">Departure City</label>
-              <input type="text" id="departure-city" name="Departure City">
-            </div>
-            <div class="form-group">
-              <label for="destination">Destination</label>
-              <input type="text" id="destination" name="Destination">
-            </div>
-            <div class="form-group full-width">
-              <label for="notes">Notes</label>
-              <textarea id="notes" name="Notes" placeholder="Anything else we should know — number of stops, special requirements, etc."></textarea>
-            </div>
+
+            <input type="hidden" name="estimate_total" id="estimate_total_input">
           </div>
 
-          <div class="form-submit-row">
-            <button type="submit" class="btn-primary">
-              Submit Request
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="form-nav" id="form-nav">
+            <button type="button" class="btn btn-ghost" id="prev-btn" style="visibility:hidden;">
+              <span class="arrow" style="transform:rotate(180deg);">→</span>
+              Back
             </button>
-            <div class="form-phone">
-              Prefer to call?
-              <a href="tel:4164387371">416-438-7371</a>
-            </div>
+            <button type="button" class="btn btn-accent" id="next-btn">
+              Continue
+              <span class="arrow">→</span>
+            </button>
           </div>
         </form>
+
+        <aside class="estimate" aria-live="polite">
+          <span class="eyebrow">Live estimate</span>
+          <div>
+            <div class="est-num" id="est-num">$0<em>–</em>$0</div>
+            <div class="est-range" id="est-range">CAD · taxes incl. · 1 vehicle</div>
+          </div>
+          <ul class="est-list" id="est-list"></ul>
+          <p class="est-note">
+            Estimate locks once dispatch confirms availability. Driver gratuity
+            already factored in — no surprise on the invoice.
+          </p>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <div class="footer-logo"><span class="ez">EZ</span>buses</div>
-      <p>&copy; 2026 EZ Buses. Toronto &amp; GTA Charter Bus Rentals.</p>
-      <p><a href="mailto:ezbuses@gmail.com">ezbuses@gmail.com</a> &middot; <a href="tel:4164387371">416-438-7371</a></p>
+  <section class="faq reveal" id="faq">
+    <div class="wrap">
+      <div class="faq-grid">
+        <div>
+          <span class="eyebrow">Real questions</span>
+          <h2 class="h-section" style="margin-top:12px;">
+            Things teachers,<br>coaches, and<br><em>brides ask us.</em>
+          </h2>
+          <p class="lede" style="margin-top:24px;">
+            Don't see yours? Email
+            <a href="mailto:ezbuses@gmail.com" style="color:var(--accent-deep);">ezbuses@gmail.com</a>
+            — we read every one.
+          </p>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-mark">EZ</span>
+            <span>EZ Buses</span>
+          </div>
+          <p style="max-width:360px;margin:0;font-size:14px;line-height:1.6;">
+            Charter buses for the people who actually have to make the trip happen.
+            Family-run, GTA-based, two decades in.
+          </p>
+        </div>
+        <div>
+          <h5>Charter</h5>
+          <ul>
+            <li><a href="#who">Field trips</a></li>
+            <li><a href="#who">Sports trips</a></li>
+            <li><a href="#who">Corporate</a></li>
+            <li><a href="#who">Weddings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#areas">Service area</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#quote">Get a quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Dispatch</h5>
+          <ul>
+            <li>Mon–Fri · 7 AM – 7 PM</li>
+            <li>Sat · 9 AM – 3 PM</li>
+            <li><a href="tel:4164387371">(416) 438 — 7371</a></li>
+            <li><a href="mailto:ezbuses@gmail.com">ezbuses@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 · EZ BUSES · TORONTO ON · EZBUSES.CA</span>
+        <span>MTO · CVOR · US DOT</span>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 20);
-    });
-
-    // Mobile menu toggle
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navLinks = document.getElementById('navLinks');
-    mobileToggle.addEventListener('click', () => {
-      mobileToggle.classList.toggle('active');
-      navLinks.classList.toggle('open');
-    });
-
-    // Close mobile menu on link click
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileToggle.classList.remove('active');
-        navLinks.classList.remove('open');
-      });
-    });
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isActive = item.classList.contains('active');
-        // Close all
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        document.querySelectorAll('.faq-question').forEach(q => q.setAttribute('aria-expanded', 'false'));
-        // Open clicked if it wasn't active
-        if (!isActive) {
-          item.classList.add('active');
-          btn.setAttribute('aria-expanded', 'true');
+    (function () {
+      var AUDIENCES = {
+        school: {
+          label: "School field trips",
+          eyebrow: "FOR EDUCATORS",
+          title: "Buses for the trip you've been planning since September.",
+          body: "We're the bus crew for the GTA's public, catholic, and independent boards. Lead-teacher friendly: itineraries, headcount checks, allergy notes — handled.",
+          points: [
+            "TDSB / TCDSB / YRDSB / YRCDSB approved vendor",
+            "MTO-inspected fleet, every quarter",
+            "46-passenger school buses with seat belts",
+            "Driver gives the teacher a phone number, not a hotline"
+          ],
+          placeholder: "PHOTO · school bus loading at curb",
+          meta: [["Capacity","46 / bus"],["From","$640 / day"],["Lead time","2–4 wk"],["Boards","4 covered"]]
+        },
+        sports: {
+          label: "Sports & tournaments",
+          eyebrow: "FOR COACHES",
+          title: "Cross-border, on-time, and not the stressful part of your weekend.",
+          body: "Multi-day coach charters across the bridge to Buffalo, Detroit, Pittsburgh and beyond. Cross-border paperwork stays on our side of the windshield.",
+          points: [
+            "ESTA / I-94 documentation handled by dispatch",
+            "Coaches with luggage holds for gear bags",
+            "Reclining seats + onboard restroom for 6+ hr legs",
+            "Driver overnight rest factored into routing"
+          ],
+          placeholder: "PHOTO · coach at border crossing",
+          meta: [["Capacity","56 / coach"],["From","$1,850 / day"],["Lead time","4–6 wk"],["Border","NY · MI · OH"]]
+        },
+        corporate: {
+          label: "Corporate shuttles",
+          eyebrow: "FOR PEOPLE OPS",
+          title: "Logistics for the off-site you didn't want to plan.",
+          body: "Hourly shuttles between hotel, venue, and after-party. We handle the loops; you handle the agenda. Branded signage on request.",
+          points: [
+            "Loop-style or point-to-point",
+            "Branded route signage and printed schedules",
+            "Wi-fi-equipped coaches available",
+            "Single PO, single invoice"
+          ],
+          placeholder: "PHOTO · coach pulling up to venue",
+          meta: [["Hourly","$185 / hr"],["Min charter","4 hr"],["Branding","Included"],["Invoicing","Net 30"]]
+        },
+        weddings: {
+          label: "Weddings & private",
+          eyebrow: "FOR THE WEDDING PARTY",
+          title: "Get everyone from ceremony to reception, glass intact.",
+          body: "Quiet, clean, on schedule. We coordinate with your planner and the venue, and we don't let Aunt Linda drive home.",
+          points: [
+            "Coordinates directly with planner / venue",
+            "Loop runs from hotel block to venue",
+            "Late-night returns up to 1:00 AM",
+            "Tip pre-included in quote — no surprises"
+          ],
+          placeholder: "PHOTO · wedding party boarding",
+          meta: [["Capacity","46–56"],["From","$1,200 / eve"],["Late returns","Up to 1 AM"],["Tip","Included"]]
         }
-      });
-    });
+      };
 
-    // Scroll reveal
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+      var REGIONS = [
+        { id:"toronto", name:"Toronto", cities:["Toronto","Etobicoke","North York","Scarborough","East York","York"] },
+        { id:"york",    name:"York Region", cities:["Markham","Vaughan","Richmond Hill","Aurora","Newmarket","King City","Stouffville","East Gwillimbury","Georgina"] },
+        { id:"peel",    name:"Peel & Halton", cities:["Mississauga","Brampton","Caledon","Oakville","Burlington","Milton","Halton Hills"] },
+        { id:"durham",  name:"Durham", cities:["Pickering","Ajax","Whitby","Oshawa","Clarington","Uxbridge"] },
+        { id:"border",  name:"Cross-border", cities:["Buffalo NY","Detroit MI","Cleveland OH","Pittsburgh PA"] }
+      ];
+
+      var NODES = {
+        toronto: { x: 280, y: 320, r: 64, label: "Toronto" },
+        york:    { x: 320, y: 200, r: 50, label: "York Reg." },
+        peel:    { x: 150, y: 290, r: 52, label: "Peel · Halton" },
+        durham:  { x: 440, y: 300, r: 46, label: "Durham" },
+        border:  { x:  80, y: 110, r: 38, label: "US border" }
+      };
+
+      var CONNECTORS = [["toronto","york"],["toronto","peel"],["toronto","durham"],["peel","border"]];
+
+      var VEHICLES = {
+        school: { label: "School bus", seats: 46, baseDay: 640, perKm: 2.6, perHour: 95 },
+        coach:  { label: "Coach bus",  seats: 56, baseDay: 1450, perKm: 3.4, perHour: 165 }
+      };
+
+      var TRIP_TYPES = [
+        { id:"school", label:"Field trip", sub:"School / educational" },
+        { id:"sports", label:"Sports trip", sub:"Tournaments / cross-border" },
+        { id:"corporate", label:"Corporate", sub:"Off-site / shuttle" },
+        { id:"wedding", label:"Wedding", sub:"Loop / late returns" }
+      ];
+
+      var FAQS = [
+        { q:"How far in advance do I need to book?",
+          a:"Two to four weeks is comfortable for a single school day-trip in the GTA. From May through October — peak field-trip and wedding season — give us six to eight weeks. Last-minute is sometimes possible; call dispatch before assuming it isn't." },
+        { q:"Are you cleared to do cross-border trips?",
+          a:"Yes. We carry the right insurance, US DOT registration, and IFTA paperwork to operate in New York, Michigan, Ohio, and Pennsylvania. Drivers carry their own enhanced docs. Coordinate the team's passports/letters with us 4+ weeks out." },
+        { q:"What does a quote actually include?",
+          a:"Vehicle, driver, fuel, HST, driver gratuity, and standard insurance. For overnight trips, driver lodging is added as a line item. There are no booking fees, no fuel surcharges, and no peak-time multipliers. The number we quote is the number you're invoiced." },
+        { q:"Do you have wheelchair-accessible vehicles?",
+          a:"Yes — we operate accessible school buses and a lift-equipped coach. Note in the quote form how many wheelchair positions you need; we route the right vehicle to your job." },
+        { q:"What if our trip gets cancelled?",
+          a:"Free reschedule up to 7 days before the trip. Inside 7 days we charge a 25% holding fee; same-day cancellations are billed at 50%. Weather cancellations called by school boards are always honoured at no charge." }
+      ];
+
+      function fmtMoney(n) { return "$" + Math.round(n).toLocaleString("en-CA"); }
+
+      function renderAudience(key) {
+        var a = AUDIENCES[key];
+        document.getElementById("aud-eyebrow").textContent = a.eyebrow;
+        var titleEl = document.getElementById("aud-title");
+        var parts = a.title.split("—");
+        titleEl.innerHTML = "";
+        parts.forEach(function (p, i) {
+          if (i === 0) {
+            var s = document.createElement("span");
+            s.textContent = p;
+            titleEl.appendChild(s);
+          } else {
+            var em = document.createElement("em");
+            em.textContent = "—" + p;
+            titleEl.appendChild(em);
+          }
+        });
+        document.getElementById("aud-body").textContent = a.body;
+        var ul = document.getElementById("aud-points");
+        ul.innerHTML = "";
+        a.points.forEach(function (p) {
+          var li = document.createElement("li");
+          li.textContent = p;
+          ul.appendChild(li);
+        });
+        document.getElementById("aud-ph").textContent = a.placeholder;
+        var meta = document.getElementById("aud-meta");
+        meta.innerHTML = "";
+        a.meta.forEach(function (pair) {
+          var div = document.createElement("div");
+          div.innerHTML = '<div class="k"></div><div class="v"></div>';
+          div.children[0].textContent = pair[0];
+          div.children[1].textContent = pair[1];
+          meta.appendChild(div);
+        });
+        var tabs = document.querySelectorAll("#aud-tabs .aud-tab");
+        tabs.forEach(function (t) {
+          t.setAttribute("aria-selected", t.dataset.key === key ? "true" : "false");
+        });
+      }
+
+      function buildAudTabs() {
+        var host = document.getElementById("aud-tabs");
+        Object.keys(AUDIENCES).forEach(function (k) {
+          var b = document.createElement("button");
+          b.className = "aud-tab";
+          b.setAttribute("role", "tab");
+          b.dataset.key = k;
+          b.textContent = AUDIENCES[k].label;
+          b.addEventListener("click", function () { renderAudience(k); });
+          host.appendChild(b);
+        });
+      }
+
+      function svgNS(name, attrs) {
+        var el = document.createElementNS("http://www.w3.org/2000/svg", name);
+        if (attrs) Object.keys(attrs).forEach(function (k) { el.setAttribute(k, attrs[k]); });
+        return el;
+      }
+
+      function renderMap(activeId) {
+        var linesHost = document.getElementById("map-lines");
+        var nodesHost = document.getElementById("map-nodes");
+        linesHost.innerHTML = "";
+        nodesHost.innerHTML = "";
+
+        CONNECTORS.forEach(function (pair) {
+          var a = NODES[pair[0]], b = NODES[pair[1]];
+          linesHost.appendChild(svgNS("line", {
+            x1: a.x, y1: a.y, x2: b.x, y2: b.y,
+            stroke: "var(--rule-strong)", "stroke-width": 1.2, "stroke-dasharray": "3 4"
+          }));
+        });
+
+        Object.keys(NODES).forEach(function (k) {
+          var n = NODES[k];
+          var isActive = activeId === k;
+          var g = svgNS("g", { style: "cursor:pointer;", "data-node": k });
+          g.addEventListener("click", function () { pickRegion(k); });
+
+          g.appendChild(svgNS("circle", {
+            cx: n.x, cy: n.y, r: n.r,
+            fill: isActive ? "var(--accent)" : "var(--bg-2)",
+            stroke: isActive ? "var(--accent-deep)" : "var(--rule-strong)",
+            "stroke-width": isActive ? 2 : 1
+          }));
+          g.appendChild(svgNS("circle", {
+            cx: n.x, cy: n.y, r: n.r - 8,
+            fill: "none",
+            stroke: isActive ? "var(--ink)" : "var(--rule)",
+            "stroke-width": 0.8,
+            "stroke-dasharray": "2 3"
+          }));
+          var label = svgNS("text", {
+            x: n.x, y: n.y - 2, "text-anchor": "middle",
+            "font-family": "var(--font-display)", "font-size": 18, fill: "var(--ink)"
+          });
+          label.textContent = n.label;
+          g.appendChild(label);
+
+          var count = REGIONS.find(function (r) { return r.id === k; }).cities.length;
+          var sub = svgNS("text", {
+            x: n.x, y: n.y + 14, "text-anchor": "middle",
+            "font-family": "var(--font-mono)", "font-size": 9,
+            "letter-spacing": 1.4, fill: "var(--ink-3)"
+          });
+          sub.textContent = count + " CITIES";
+          g.appendChild(sub);
+
+          nodesHost.appendChild(g);
+        });
+      }
+
+      function renderRegions(activeId) {
+        var host = document.getElementById("region-list");
+        host.innerHTML = "";
+        REGIONS.forEach(function (r) {
+          var active = r.id === activeId;
+          var block = document.createElement("div");
+          block.className = "region-block" + (active ? " active" : "");
+          block.dataset.region = r.id;
+
+          var head = document.createElement("div");
+          head.className = "region-head";
+          var h4 = document.createElement("h4");
+          if (active) {
+            var em = document.createElement("em");
+            em.textContent = r.name;
+            h4.appendChild(em);
+          } else {
+            h4.textContent = r.name;
+          }
+          var count = document.createElement("span");
+          count.className = "count";
+          count.textContent = r.cities.length + " cities";
+          head.appendChild(h4);
+          head.appendChild(count);
+          head.addEventListener("click", function () { pickRegion(r.id); });
+          block.appendChild(head);
+
+          var cities = document.createElement("div");
+          cities.className = "cities";
+          r.cities.forEach(function (c) {
+            var s = document.createElement("span");
+            s.className = "city" + (active ? " active" : "");
+            s.textContent = c;
+            cities.appendChild(s);
+          });
+          block.appendChild(cities);
+          host.appendChild(block);
+        });
+      }
+
+      var activeRegion = "toronto";
+      function pickRegion(id) {
+        activeRegion = id;
+        renderMap(id);
+        renderRegions(id);
+      }
+
+      function renderFaq() {
+        var list = document.getElementById("faq-list");
+        FAQS.forEach(function (f, i) {
+          var item = document.createElement("div");
+          item.className = "faq-item" + (i === 0 ? " open" : "");
+          item.innerHTML =
+            '<div class="faq-q"><span></span><span class="plus">+</span></div>' +
+            '<div class="faq-a"><div class="faq-a-inner"></div></div>';
+          item.querySelector(".faq-q span").textContent = f.q;
+          item.querySelector(".faq-a-inner").textContent = f.a;
+          item.addEventListener("click", function () {
+            var open = item.classList.contains("open");
+            document.querySelectorAll(".faq-item").forEach(function (el) { el.classList.remove("open"); });
+            if (!open) item.classList.add("open");
+          });
+          list.appendChild(item);
+        });
+      }
+
+      var state = {
+        step: 0,
+        tripType: "school",
+        vehicle: "school",
+        passengers: 40,
+        duration: 8,
+        distance: 80,
+        crossBorder: false,
+        overnight: false
+      };
+      var STEPS = ["Trip", "Vehicle", "Schedule", "Contact"];
+
+      function buildStepper() {
+        var host = document.getElementById("stepper");
+        host.innerHTML = "";
+        STEPS.forEach(function (s, i) {
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "step" + (i === state.step ? " current" : i < state.step ? " done" : "");
+          b.textContent = String(i + 1).padStart(2, "0") + " · " + s;
+          b.addEventListener("click", function () {
+            if (i <= state.step && state.step < 4) setStep(i);
+          });
+          host.appendChild(b);
+        });
+      }
+
+      function setStep(i) {
+        state.step = i;
+        buildStepper();
+        document.querySelectorAll(".step-panel").forEach(function (p) {
+          p.classList.toggle("current", parseInt(p.dataset.step, 10) === i);
+        });
+        var prev = document.getElementById("prev-btn");
+        var next = document.getElementById("next-btn");
+        var nav = document.getElementById("form-nav");
+        if (i === 4) {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "";
+          prev.style.visibility = i === 0 ? "hidden" : "visible";
+          next.innerHTML = (i === 3 ? "Send to dispatch" : "Continue") + ' <span class="arrow">→</span>';
         }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        updateNextEnabled();
+      }
 
-    revealEls.forEach(el => observer.observe(el));
+      function canNext() {
+        if (state.step === 0) return !!state.tripType;
+        if (state.step === 1) return state.passengers > 0;
+        if (state.step === 2) return state.duration > 0 && state.distance > 0;
+        if (state.step === 3) {
+          var name = document.getElementById("name").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var date = document.getElementById("trip-date").value;
+          return name && email && date;
+        }
+        return true;
+      }
+
+      function updateNextEnabled() {
+        var btn = document.getElementById("next-btn");
+        var ok = canNext();
+        btn.disabled = !ok;
+        btn.style.opacity = ok ? 1 : 0.4;
+      }
+
+      function buildTripTypes() {
+        var host = document.getElementById("trip-type-row");
+        host.innerHTML = "";
+        TRIP_TYPES.forEach(function (t) {
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "choice" + (state.tripType === t.id ? " active" : "");
+          b.dataset.key = t.id;
+          b.innerHTML = '<span class="t"></span><span class="s"></span>';
+          b.children[0].textContent = t.label;
+          b.children[1].textContent = t.sub;
+          b.addEventListener("click", function () {
+            state.tripType = t.id;
+            document.getElementById("trip_type_input").value = t.id;
+            state.vehicle = (t.id === "school") ? "school" : "coach";
+            document.getElementById("vehicle_input").value = state.vehicle;
+            buildTripTypes();
+            buildVehicles();
+            recompute();
+          });
+          host.appendChild(b);
+        });
+      }
+
+      function buildVehicles() {
+        var host = document.getElementById("vehicle-row");
+        host.innerHTML = "";
+        Object.keys(VEHICLES).forEach(function (k) {
+          var vv = VEHICLES[k];
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "choice" + (state.vehicle === k ? " active" : "");
+          b.dataset.key = k;
+          b.innerHTML = '<span class="t"></span><span class="s"></span>';
+          b.children[0].textContent = vv.label;
+          b.children[1].textContent = vv.seats + " seats · from " + fmtMoney(vv.baseDay) + "/day";
+          b.addEventListener("click", function () {
+            state.vehicle = k;
+            document.getElementById("vehicle_input").value = k;
+            buildVehicles();
+            recompute();
+          });
+          host.appendChild(b);
+        });
+      }
+
+      function recompute() {
+        var v = VEHICLES[state.vehicle];
+        var buses = Math.max(1, Math.ceil(state.passengers / v.seats));
+        var baseLine = buses * v.baseDay;
+        var distanceLine = buses * state.distance * v.perKm;
+        var timeLine = state.duration > 8 ? buses * (state.duration - 8) * v.perHour : 0;
+        var borderLine = state.crossBorder ? buses * 380 : 0;
+        var overnightLine = state.overnight ? buses * 520 : 0;
+        var subtotal = baseLine + distanceLine + timeLine + borderLine + overnightLine;
+        var tax = subtotal * 0.13;
+        var total = subtotal + tax;
+        var low = total * 0.92, high = total * 1.08;
+
+        document.getElementById("est-num").innerHTML =
+          fmtMoney(low) + "<em>–</em>" + fmtMoney(high).replace("$", "");
+        document.getElementById("est-range").textContent =
+          "CAD · taxes incl. · " + buses + " " + (buses === 1 ? "vehicle" : "vehicles");
+
+        var list = document.getElementById("est-list");
+        list.innerHTML = "";
+        function row(k, val) {
+          var li = document.createElement("li");
+          li.innerHTML = '<span class="k"></span><span class="v"></span>';
+          li.children[0].textContent = k;
+          li.children[1].textContent = fmtMoney(val);
+          list.appendChild(li);
+        }
+        row("Base · " + buses + " × " + v.label, baseLine);
+        row("Distance · " + state.distance + " km", distanceLine);
+        if (timeLine > 0) row("Extra hrs (" + (state.duration - 8) + ")", timeLine);
+        if (borderLine > 0) row("Cross-border", borderLine);
+        if (overnightLine > 0) row("Overnight", overnightLine);
+        row("HST 13%", tax);
+
+        document.getElementById("pax-derived").textContent =
+          buses + " " + (buses === 1 ? "bus" : "buses") + " · " + (buses * v.seats) + " seats avail.";
+        document.getElementById("estimate_total_input").value =
+          fmtMoney(low) + "–" + fmtMoney(high) + " (" + buses + " " + v.label.toLowerCase() + ")";
+      }
+
+      function initForm() {
+        buildStepper();
+        buildTripTypes();
+        buildVehicles();
+
+        var pax = document.getElementById("pax");
+        pax.addEventListener("input", function () {
+          state.passengers = parseInt(pax.value, 10);
+          document.getElementById("pax-v").textContent = state.passengers;
+          recompute();
+        });
+
+        var dur = document.getElementById("dur");
+        dur.addEventListener("input", function () {
+          state.duration = parseInt(dur.value, 10);
+          document.getElementById("dur-v").textContent = state.duration + " hr";
+          recompute();
+        });
+
+        var dist = document.getElementById("dist");
+        dist.addEventListener("input", function () {
+          state.distance = parseInt(dist.value, 10);
+          document.getElementById("dist-v").textContent = state.distance + " km";
+          recompute();
+        });
+
+        var cb = document.getElementById("cross-border");
+        cb.addEventListener("click", function () {
+          state.crossBorder = !state.crossBorder;
+          cb.classList.toggle("active", state.crossBorder);
+          document.getElementById("cross_border_input").value = state.crossBorder ? "yes" : "no";
+          recompute();
+        });
+
+        var ov = document.getElementById("overnight");
+        ov.addEventListener("click", function () {
+          state.overnight = !state.overnight;
+          ov.classList.toggle("active", state.overnight);
+          document.getElementById("overnight_input").value = state.overnight ? "yes" : "no";
+          recompute();
+        });
+
+        ["name","email","trip-date"].forEach(function (id) {
+          document.getElementById(id).addEventListener("input", updateNextEnabled);
+          document.getElementById(id).addEventListener("change", updateNextEnabled);
+        });
+
+        document.getElementById("prev-btn").addEventListener("click", function () {
+          if (state.step > 0) setStep(state.step - 1);
+        });
+
+        document.getElementById("next-btn").addEventListener("click", function () {
+          if (!canNext()) return;
+          if (state.step < 3) {
+            setStep(state.step + 1);
+          } else {
+            submitForm();
+          }
+        });
+
+        document.getElementById("reset-quote").addEventListener("click", function () {
+          setStep(0);
+        });
+
+        recompute();
+        updateNextEnabled();
+      }
+
+      function encodeForm(form) {
+        var data = new FormData(form);
+        var pairs = [];
+        data.forEach(function (v, k) {
+          pairs.push(encodeURIComponent(k) + "=" + encodeURIComponent(v));
+        });
+        return pairs.join("&");
+      }
+
+      function submitForm() {
+        var form = document.getElementById("quote-form");
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        document.getElementById("thanks-name").textContent = name.split(" ")[0] || "there";
+        document.getElementById("thanks-email").textContent = email;
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encodeForm(form)
+        }).catch(function () { /* offline/local dev — still show success */ });
+
+        setStep(4);
+      }
+
+      function initReveal() {
+        if (!("IntersectionObserver" in window)) {
+          document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+          return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("in"); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+      }
+
+      function initDispatch() {
+        var d = new Date();
+        var hrs = d.getHours();
+        var mins = String(d.getMinutes()).padStart(2, "0");
+        var h12 = ((hrs + 11) % 12 + 1);
+        var ampm = hrs >= 12 ? "PM" : "AM";
+        document.getElementById("dispatch-status").textContent =
+          "DISPATCH ONLINE · TORONTO · " + h12 + ":" + mins + " " + ampm;
+        var tomorrow = new Date(d);
+        tomorrow.setDate(d.getDate() + 1);
+        var days = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+        var months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+        document.getElementById("next-available").textContent =
+          "NEXT AVAILABLE · " + days[tomorrow.getDay()] + " " +
+          tomorrow.getDate() + " " + months[tomorrow.getMonth()];
+      }
+
+      buildAudTabs();
+      renderAudience("school");
+      pickRegion("toronto");
+      renderFaq();
+      initForm();
+      initReveal();
+      initDispatch();
+    })();
   </script>
 
 </body>
